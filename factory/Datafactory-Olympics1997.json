@@ -1,0 +1,9 @@
+{
+	"name": "Datafactory-Olympics1997",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c76b0c29-f933-46a1-8fb5-68b56dbdfbf1",
+		"tenantId": "2dc257b8-d9d2-4212-87eb-670c815afad1"
+	}
+}
