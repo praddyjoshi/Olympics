@@ -5,17 +5,36 @@
 			"referenceName": "Copydatafromsourcegit",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Filecopyoutput": {
+				"type": "Array",
+				"defaultValue": [
+					"main/Coaches.csv",
+					"main/athletes.csv",
+					"main/medals.csv",
+					"main/teams.csv"
+				]
+			},
+			"filescopyoutput": {
+				"type": "String",
+				"defaultValue": "\"main/Coaches.csv.csv\",\"athletes.csv\",\"medals.csv\",\"teams.csv\""
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "https://github.com/praddyjoshi/Olympics/tree/main"
+				"relativeUrl": {
+					"value": "@dataset().filescopyoutput",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			"firstRowAsHeader": false,
+			"quoteChar": null
 		},
 		"schema": []
 	}
