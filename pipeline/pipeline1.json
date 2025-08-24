@@ -76,7 +76,7 @@
 		],
 		"parameters": {
 			"FIles-copy": {
-				"type": "String"
+				"type": "array"
 			}
 		},
 		"annotations": []
