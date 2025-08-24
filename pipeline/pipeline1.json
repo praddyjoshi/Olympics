@@ -30,7 +30,8 @@
 									"type": "DelimitedTextSource",
 									"storeSettings": {
 										"type": "HttpReadSettings",
-										"requestMethod": "GET"
+										"requestMethod": "GET",
+										"requestTimeout": ""
 									},
 									"formatSettings": {
 										"type": "DelimitedTextReadSettings"
@@ -49,12 +50,8 @@
 								},
 								"enableStaging": false,
 								"translator": {
-									"type": "TabularTranslator",
-									"typeConversion": true,
-									"typeConversionSettings": {
-										"allowDataTruncation": true,
-										"treatBooleanAsNumber": false
-									}
+									"value": "@pipeline().parameters.FIlescopy2",
+									"type": "Expression"
 								}
 							},
 							"inputs": [
@@ -76,6 +73,15 @@
 		],
 		"parameters": {
 			"FIlescopy": {
+				"type": "array",
+				"defaultValue": [
+					"Coaches.csv",
+					"athletes.csv",
+					"medals.csv",
+					"teams.csv"
+				]
+			},
+			"Filescopy2": {
 				"type": "array",
 				"defaultValue": [
 					"Coaches.csv",
