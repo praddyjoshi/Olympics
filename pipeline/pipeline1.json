@@ -75,7 +75,7 @@
 			}
 		],
 		"parameters": {
-			"FIles-copy": {
+			"FIlescopy": {
 				"type": "array"
 			}
 		},
