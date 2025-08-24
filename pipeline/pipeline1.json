@@ -56,7 +56,16 @@
 							"inputs": [
 								{
 									"referenceName": "DelimitedText2",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Filecopyoutput": [
+											"main/Coaches.csv",
+											"main/athletes.csv",
+											"main/medals.csv",
+											"main/teams.csv"
+										],
+										"filescopyoutput": "\"main/Coaches.csv.csv\",\"athletes.csv\",\"medals.csv\",\"teams.csv\""
+									}
 								}
 							],
 							"outputs": [
