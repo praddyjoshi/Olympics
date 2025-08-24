@@ -79,15 +79,6 @@
 					"medals.csv",
 					"teams.csv"
 				]
-			},
-			"Filescopy2": {
-				"type": "array",
-				"defaultValue": [
-					"Coaches.csv",
-					"athletes.csv",
-					"medals.csv",
-					"teams.csv"
-				]
 			}
 		},
 		"annotations": []
