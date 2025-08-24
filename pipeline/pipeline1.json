@@ -76,7 +76,8 @@
 		],
 		"parameters": {
 			"FIlescopy": {
-				"type": "array"
+				"type": "array",
+				"defaultValue": "*.csv"
 			}
 		},
 		"annotations": []
