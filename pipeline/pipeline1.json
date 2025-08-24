@@ -30,8 +30,7 @@
 									"type": "DelimitedTextSource",
 									"storeSettings": {
 										"type": "HttpReadSettings",
-										"requestMethod": "GET",
-										"requestTimeout": ""
+										"requestMethod": "GET"
 									},
 									"formatSettings": {
 										"type": "DelimitedTextReadSettings"
@@ -56,7 +55,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "olympicsdatacopy",
+									"referenceName": "DelimitedText2",
 									"type": "DatasetReference"
 								}
 							],
