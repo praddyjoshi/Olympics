@@ -8,6 +8,10 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.DataIngestionfromJson",
+						"type": "Expression"
+					},
 					"activities": [
 						{
 							"name": "CopyDatafromGit",
@@ -56,13 +60,25 @@
 							"inputs": [
 								{
 									"referenceName": "CopydatafromGit",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Copydatafromgit": {
+											"value": "@item().Copydatafromgit",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "CopydatatoADLSsink",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"FileNamestoADLS": {
+											"value": "@item().FileNamestoADLS",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
