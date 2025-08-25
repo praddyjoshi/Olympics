@@ -1,0 +1,77 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "Olympicsdf1997"
+		},
+		"Copydatafromsourcegit1997_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'Copydatafromsourcegit1997'"
+		},
+		"CopytoAzureDataLakeStorage_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'CopytoAzureDataLakeStorage'"
+		},
+		"Copydatafromsourcegit1997_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://github.com/praddyjoshi/"
+		},
+		"Copydatafromsourcegit1997_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "praddyjoshi"
+		},
+		"CopytoAzureDataLakeStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://olympicsrg1997.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "Olympicsdf1997_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"Copydatafromsourcegit1997_password": {
+						"value": "[parameters('Copydatafromsourcegit1997_password')]"
+					},
+					"CopytoAzureDataLakeStorage_accountKey": {
+						"value": "[parameters('CopytoAzureDataLakeStorage_accountKey')]"
+					},
+					"Copydatafromsourcegit1997_properties_typeProperties_url": {
+						"value": "[parameters('Copydatafromsourcegit1997_properties_typeProperties_url')]"
+					},
+					"Copydatafromsourcegit1997_properties_typeProperties_userName": {
+						"value": "[parameters('Copydatafromsourcegit1997_properties_typeProperties_userName')]"
+					},
+					"CopytoAzureDataLakeStorage_properties_typeProperties_url": {
+						"value": "[parameters('CopytoAzureDataLakeStorage_properties_typeProperties_url')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

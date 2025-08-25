@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Olympicsdf1997"
+		},
+		"Copydatafromsourcegit1997_password": {
+			"value": ""
+		},
+		"CopytoAzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"Copydatafromsourcegit1997_properties_typeProperties_url": {
+			"value": "https://github.com/praddyjoshi/"
+		},
+		"Copydatafromsourcegit1997_properties_typeProperties_userName": {
+			"value": "praddyjoshi"
+		},
+		"CopytoAzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://olympicsrg1997.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
