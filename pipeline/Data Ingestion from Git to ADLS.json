@@ -91,7 +91,7 @@
 				"type": "array",
 				"defaultValue": [
 					{
-						"Copydatafromgit": "Olympics/Coaches.csv",
+						"Copydatafromgit": "Olympics/blob/main/Coaches.csv",
 						"FileNamestoADLS": "Coaches.csv"
 					},
 					{
