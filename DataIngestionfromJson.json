@@ -1,0 +1,18 @@
+[
+	{
+	"Copydatafromgit":"Olympics/blob/main/Coaches.csv",
+	"FileNamestoADLS":"Coaches.csv"
+	},
+	{
+	"Copydatafromgit":"Olympics/blob/main/athletes.csv",
+	"FileNamestoADLS":"athletes.csv"
+	},
+	{
+	"Copydatafromgit":"Olympics/blob/main/medals.csv",
+	"FileNamestoADLS":"medals.csv"
+	},
+	{
+	"Copydatafromgit":"Olympics/blob/main/teams.csv",
+	"FileNamestoADLS":"teams.csv"
+	}
+]
