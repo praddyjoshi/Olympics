@@ -89,7 +89,24 @@
 		"parameters": {
 			"DataIngestionfromJson": {
 				"type": "array",
-				"defaultValue": "[ \t{ \t\"Copydatafromgit\":\"/refs/heads/main/Coaches.csv\", \t\"FileNamestoADLS\":\"Coaches.csv\" \t}, \t{ \t\"Copydatafromgit\":\"/refs/heads/main/athletes.csv\", \t\"FileNamestoADLS\":\"athletes.csv\" \t}, \t{ \t\"Copydatafromgit\":\"/refs/heads/main/medals.csv\" \t\"FileNamestoADLS\":\"medals.csv\" \t}, \t{ \t\"Copydatafromgit\":\"/refs/heads/main/teams.csv\" \t\"FileNamestoADLS\":\"teams.csv\" \t} ]"
+				"defaultValue": [
+					{
+						"Copydatafromgit": "/refs/heads/main/Coaches.csv",
+						"FileNamestoADLS": "Coaches.csv"
+					},
+					{
+						"Copydatafromgit": "/refs/heads/main/athletes.csv",
+						"FileNamestoADLS": "athletes.csv"
+					},
+					{
+						"Copydatafromgit": "/refs/heads/main/medals.csv",
+						"FileNamestoADLS": "medals.csv"
+					},
+					{
+						"Copydatafromgit": "/refs/heads/main/teams.csv",
+						"FileNamestoADLS": "teams.csv"
+					}
+				]
 			}
 		},
 		"annotations": []
