@@ -91,11 +91,11 @@
 				"type": "array",
 				"defaultValue": [
 					{
-						"Copydatafromgit": "Olympics/main/Coaches.csv",
+						"Copydatafromgit": "Olympics/Coaches.csv",
 						"FileNamestoADLS": "Coaches.csv"
 					},
 					{
-						"Copydatafromgit": "Olympics/main/athletes.csv",
+						"Copydatafromgit": "Olympics/athletes.csv",
 						"FileNamestoADLS": "athletes.csv"
 					},
 					{
