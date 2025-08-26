@@ -1,0 +1,9 @@
+{
+	"name": "olymmpicsdf1997",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "329c1909-d4ca-4bfd-8efa-2e020e0744db",
+		"tenantId": "2dc257b8-d9d2-4212-87eb-670c815afad1"
+	}
+}
