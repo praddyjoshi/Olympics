@@ -1,0 +1,9 @@
+{
+	"name": "olympicsdf1997",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c805ac65-d3c7-4911-b49a-448fef0d634e",
+		"tenantId": "2dc257b8-d9d2-4212-87eb-670c815afad1"
+	}
+}
