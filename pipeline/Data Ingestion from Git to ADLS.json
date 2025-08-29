@@ -44,7 +44,7 @@
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
 										"quoteAllText": true,
-										"fileExtension": ".txt"
+										"fileExtension": ".csv"
 									}
 								},
 								"enableStaging": false,
@@ -71,14 +71,8 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "CopydatatoADLSsink",
-									"type": "DatasetReference",
-									"parameters": {
-										"FileNamestoADLS": {
-											"value": "@item().FileNamestoADLS",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "DelimitedText1",
+									"type": "DatasetReference"
 								}
 							]
 						}
