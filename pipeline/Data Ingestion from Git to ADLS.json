@@ -86,19 +86,19 @@
 				"defaultValue": [
 					{
 						"Copydatafromgit": "Olympics/blob/main/Coaches.csv",
-						"FileNamestoADLS": "Coaches.csv"
+						"filename": "Coaches.csv"
 					},
 					{
 						"Copydatafromgit": "Olympics/blob/main/athletes.csv",
-						"FileNamestoADLS": "athletes.csv"
+						"filename": "athletes.csv"
 					},
 					{
 						"Copydatafromgit": "Olympics/blob/main/medals.csv",
-						"FileNamestoADLS": "medals.csv"
+						"filename": "medals.csv"
 					},
 					{
 						"Copydatafromgit": "Olympics/blob/main/teams.csv",
-						"FileNamestoADLS": "teams.csv"
+						"filename": "teams.csv"
 					}
 				]
 			}
