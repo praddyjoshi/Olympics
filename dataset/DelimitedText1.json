@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "@dataset().FileNamestoADLS",
 				"folderPath": "Bronze",
 				"fileSystem": "olympics-data"
 			},
