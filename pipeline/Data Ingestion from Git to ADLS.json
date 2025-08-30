@@ -5,7 +5,14 @@
 			{
 				"name": "ForEach1",
 				"type": "ForEach",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Lookup1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
@@ -84,11 +91,107 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "Lookup1",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"dataset": {
+						"referenceName": "CopydatafromGit",
+						"type": "DatasetReference",
+						"parameters": {
+							"Copydatafromgit": {
+								"value": "@pipeline().parameters.copydatafromgit",
+								"type": "Expression"
+							}
+						}
+					}
+				}
+			},
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "ForEach1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			},
+			{
+				"name": "Notebook2",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Notebook1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"parameters": {
 			"DataIngestionfromJson": {
 				"type": "array",
+				"defaultValue": [
+					{
+						"Copydatafromgit": "Olympics/blob/main/Coaches.csv",
+						"filename": "Coaches.csv"
+					},
+					{
+						"Copydatafromgit": "Olympics/blob/main/athletes.csv",
+						"filename": "athletes.csv"
+					},
+					{
+						"Copydatafromgit": "Olympics/blob/main/medals.csv",
+						"filename": "medals.csv"
+					},
+					{
+						"Copydatafromgit": "Olympics/blob/main/teams.csv",
+						"filename": "teams.csv"
+					}
+				]
+			},
+			"copydatafromgit": {
+				"type": "Array",
 				"defaultValue": [
 					{
 						"Copydatafromgit": "Olympics/blob/main/Coaches.csv",
