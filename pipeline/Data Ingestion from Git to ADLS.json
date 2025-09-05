@@ -105,7 +105,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/praddyjoshi_gmail.com#ext#@praddyjoshigmail.onmicrosoft.com/Data -transformation.py"
+					"notebookPath": "/Users/praddyjoshi_gmail.com#ext#@praddyjoshigmail.onmicrosoft.com/Data -transformation"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks2",
