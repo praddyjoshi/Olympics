@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "newrgws"
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks2_accessToken": {
+			"value": ""
+		},
+		"Copydatafromsourcegit1997_password": {
+			"value": ""
+		},
+		"CopytoAzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"LSAzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"LSToADLS_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0830-092719-r6dneik7"
+		},
+		"AzureDatabricks2_properties_typeProperties_existingClusterId": {
+			"value": "0905-121508-59772dnf"
+		},
+		"Copydatafromsourcegit1997_properties_typeProperties_url": {
+			"value": "https://github.com/praddyjoshi/"
+		},
+		"Copydatafromsourcegit1997_properties_typeProperties_userName": {
+			"value": "praddyjoshi"
+		},
+		"CopytoAzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://olympicssg1997.dfs.core.windows.net/"
+		},
+		"LSAzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "cdudemyserver.database.windows.net"
+		},
+		"LSAzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "cdudemypractice"
+		},
+		"LSAzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "admin123"
+		},
+		"LSToADLS_properties_typeProperties_url": {
+			"value": "https://newrgsg1997.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
