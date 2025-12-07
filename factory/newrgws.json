@@ -1,0 +1,9 @@
+{
+	"name": "newrgws",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "577896c1-db72-4162-83a0-b0d03244d65a",
+		"tenantId": "2dc257b8-d9d2-4212-87eb-670c815afad1"
+	}
+}

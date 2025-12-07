@@ -1,0 +1,17 @@
+{
+	"name": "LSAzureSqlDatabase1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "cdudemyserver.database.windows.net",
+			"database": "cdudemypractice",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "admin123",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQENBNkE2MTZELUEwN0QtNDg4Ri1BNEJDLTVCNDQ0RTg1ODY3NV82NDI2MTZlNy1lNDVmLTQ4NGUtYmEwZS0wZTVjYTI0OTMyYTciDQp9"
+		}
+	}
+}

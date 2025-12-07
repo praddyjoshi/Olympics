@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "DS_yearwise_csv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LSToADLS",
@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "OrdersQuote.csv",
-				"folderPath": "input",
+				"folderPath": "input/yearwise",
 				"fileSystem": "input"
 			},
 			"columnDelimiter": ",",
@@ -19,7 +18,24 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "DATE",
+				"type": "String"
+			},
+			{
+				"name": "COUNTRY",
+				"type": "String"
+			},
+			{
+				"name": "PRODUCT",
+				"type": "String"
+			},
+			{
+				"name": "SALES",
+				"type": "String"
+			}
+		]
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }
